@@ -28,7 +28,7 @@ var s,
 				var obj = [];
 				$.each(news,function(id,item){
 					//console.log(item.id[idSelect]);
-					obj.push("<li><a href='"+item.url+"' target='_blanl'><img src='"+item.image+"'><p>"+item.desc+"</p></a></li>");
+					obj.push("<li><a href='#' onclick='window.open('"+item.url+"','_system')'><img src='"+item.image+"'><p>"+item.desc+"</p></a></li>");
 				});
 				$("#noticias ul").html(obj.join(""));
 			},
